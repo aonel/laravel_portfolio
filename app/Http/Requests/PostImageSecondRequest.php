@@ -25,14 +25,12 @@ class PostImageSecondRequest extends FormRequest
     {
         return [
             'image2' => [
-                'image' => [
-                    'required',
-                    'file', // ファイルがアップロードされている
-                    'image', // 画像ファイルである
-                    'mimes:jpeg,jpg,png', // 形式はjpegかpng
-                    'dimensions:min_width=200,min_height=200',
-                    'max:1024'
-                ],
+                'required',
+                'file', // ファイルがアップロードされている
+                'image', // 画像ファイルである
+                'mimes:jpeg,jpg,png', // 形式はjpegかpng
+                'dimensions:min_width=200,min_height=200',
+                'max:1024'
             ],
         ];
     }
