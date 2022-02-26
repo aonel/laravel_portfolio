@@ -12,7 +12,6 @@
           <li date-target="#cl" data-slide-to="{{ $key }}" class="active"></li>
         @endforeach
       </ol>
-      
       <div class="slide_carousel carousel-inner">
         @foreach($slides as $key => $slide)
           @if($slide->image !== '')
@@ -28,17 +27,16 @@
               </a>
             </div>
           @endif
-        @endforeach
-      </div>
           <a class="carousel-control-prev" href="#cl" data-slide="prev">
             <span class="arrow_next carousel-control-prev-icon"></span>
           </a>
           <a class="carousel-control-next" href="#cl" data-slide="next">
             <span class="arrow_prev carousel-control-next-icon"></span>
           </a>
+        @endforeach
+      </div>
     </div>
   </div>
-  
   <main class="top_main">
     <!--最新の投稿一覧-->
     <section class="top_background">
@@ -59,7 +57,9 @@
             @endif 
           </div>
         @empty
+        <div class="no_user">
           <li>オリジナルのホームページを投稿してみよう！</li>
+        </div>
         @endforelse
       </ul>
     </section>

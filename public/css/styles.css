@@ -88,6 +88,11 @@ section {
   border-color: #2c4760!important;
 }
 
+/* 投稿場がないとき */
+.no_post {
+  padding: 30px;
+  font-size: 17px;
+}
 /* ナビゲーション 
 ---------------------------------------------------------------------------------*/
 .nav_logo {
@@ -138,6 +143,11 @@ main {
 }
 .indicators .active {
   background-color: red!important;
+}
+
+.no_user {
+  font-size: 17px;
+  margin: 50px;
 }
 
 /*main*
@@ -239,7 +249,11 @@ figure img {
 }
 
 .list_text {
-  margin: 0px 0px 85px 40px;
+  margin: 38px 0px 40px 40px;
+  height: auto;
+  background-color: #ededed;
+  border-radius: 28px;
+  padding: 10px;
 }
 
 .list .list_text {
@@ -324,7 +338,7 @@ figure img {
   display: flex;
   width: 100%;
   height: auto;
-  padding-right: 12px;
+  padding: 10px;
 }
 
 .user_post {

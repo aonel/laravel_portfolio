@@ -72,7 +72,9 @@
             </div>
           </div>
         @empty
+        <div class="no_post">
           <li>お気に入りはありません</li>
+        </div>
         @endforelse
       </div>
     </section>

@@ -61,7 +61,9 @@
             </div>
           </div>
         @empty
+        <div class="no_post">
           <li>オリジナルのホームページを投稿してみよう！</li>
+        </div>
         @endforelse
       </div>
     </section>
