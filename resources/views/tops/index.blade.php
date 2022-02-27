@@ -4,7 +4,6 @@
 
 @section('title', $title)
 
-  @forelse($posts as $post)
     <!--スライドショー-->
     <div class="pickup">
       <div id="cl" class="carousel slide" data-ride="carousel">
@@ -45,6 +44,7 @@
         <h3 class="mt-5">最新の投稿一覧</h3>
       
         <ul class="img_content">
+        @forelse($posts as $post)
           <div class="img_item ">
             @if($post->image !== '')
               <a href="{{route('tops.show',$post)}}"><img data-src="{{ asset('storage/' .$post->image) }}" class="lazyload">
@@ -57,15 +57,15 @@
               </a>
             @endif 
           </div>
-        </ul>
-      </section>
-      {{ $posts->links() }}
-    </main>
-  @empty
-    <div class="no_user">
-      <li>ログインしてオリジナルのホームページを投稿してみよう！</li>
-    </div>
-  @endforelse
+          @empty
+          <div class="no_user">
+            <li>ログインしてオリジナルのホームページを投稿してみよう！</li>
+          </div>
+        @endforelse
+      </ul>
+    </section>
+    {{ $posts->links() }}
+  </main>
 
   <footer>
     <div class="footer_box">
