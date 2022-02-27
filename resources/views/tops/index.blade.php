@@ -43,7 +43,7 @@
       <section class="top_background">
         <h3 class="mt-5">最新の投稿一覧</h3>
       
-        <ul class="img_content">
+      <ul class="img_content">
         @forelse($posts as $post)
           <div class="img_item ">
             @if($post->image !== '')
