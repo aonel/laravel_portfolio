@@ -44,6 +44,9 @@ body {
   background-color: #f5f5f5!important;
   padding-top: 64px;
   font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif!important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 @media screen and (max-width:992px) {
   body {
@@ -299,7 +302,7 @@ figure img {
 }
 
 .modal-content {
-  width: 600px!important;
+  width: 750px!important;
 }
 .modal-body img {
   height: auto;
@@ -447,4 +450,7 @@ figure img {
   border-top: solid 1px rgba(0,0,0,.125);
   padding: 20px;
   margin-top: 30px;
+}
+footer {
+  margin-top: auto;
 }

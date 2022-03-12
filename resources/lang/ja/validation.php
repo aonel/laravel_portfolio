@@ -156,6 +156,7 @@ return [
         'concept' => 'コンセプト',
         'ingenuity' => '工夫点',
         'image' => '画像',
+        'image2' => '全体画像',
     ],
 
 ];

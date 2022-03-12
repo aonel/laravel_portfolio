@@ -33,7 +33,7 @@
                 </div>
                 <input type="file" name="image" class="form-control">
               </div>
-              <div class="edit_caution">※画像サイズは1024KBまでです。サイズが大きい場合はお手数ですが、圧縮サイトなどで圧縮を行いご投稿お願いします。</div>
+              <div class="edit_caution">※画像サイズは1024KB以下です。サイズが大きい場合はお手数ですが、圧縮サイトなどで圧縮を行いご投稿お願いします。</div>
             </div>
             <div class="form-group">
               <button type="submit" value="更新" class="btn btn-secondary btn-block"> 更新  </button>

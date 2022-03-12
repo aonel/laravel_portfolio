@@ -30,7 +30,7 @@ class PostImageSecondRequest extends FormRequest
                 'image', // 画像ファイルである
                 'mimes:jpeg,jpg,png', // 形式はjpegかpng
                 'dimensions:min_width=200,min_height=200',
-                'max:1024'
+                'max:2048'
             ],
         ];
     }
