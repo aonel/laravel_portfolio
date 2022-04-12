@@ -16,6 +16,8 @@ Route::get('/', 'TopController@index')->name('tops.index');
 
 Route::get('tops/{id}/show', 'TopController@show')->name('tops.show');
 
+Route::get('tops/explanation', 'TopController@explanation')->name('tops.explanation');
+
 Auth::routes();
 
 
