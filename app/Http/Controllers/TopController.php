@@ -33,4 +33,10 @@ class TopController extends Controller
       'user' => $user,
     ]);
   }
+  public function explanation()
+  {
+    return view('tops.explanation', [
+      'title' => 'このサイトについて',
+    ]);
+  }
 }

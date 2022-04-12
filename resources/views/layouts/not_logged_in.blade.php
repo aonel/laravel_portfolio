@@ -13,12 +13,17 @@
     <div class="collapse navbar-collapse p-2" id="mainNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
+          <a href="{{ route('tops.explanation') }}" class="nav-link btn btn-outline-secondary" style="border-bottom: solid 2px #f00707;">
+            このサイトについて
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="{{ route('login') }}" class="nav-link btn btn-outline-secondary" style="border-bottom: solid 2px #0fa3f9;">
             投稿する
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{ route('login') }}"  class="nav-link btn btn-outline-secondary" style="border-color:gray; margin:0 15px;">
+          <a href="{{ route('login') }}" class="nav-link btn btn-outline-secondary" style="border-color:gray; margin:0 15px;">
             ログイン
           </a>
         </li>
