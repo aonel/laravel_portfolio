@@ -42,7 +42,7 @@
 ---------------------------------------------------------------------------------*/
 body {
   background-color: #f5f5f5!important;
-  padding-top: 64px;
+  padding-top: 74px;
   font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif!important;
   display: flex;
   flex-direction: column;
@@ -96,21 +96,38 @@ section {
   padding: 30px;
   font-size: 17px;
 }
+.fixed-top  {
+  height: 74px;
+}
 /* ナビゲーション 
 ---------------------------------------------------------------------------------*/
 .nav_logo {
   font-family: "Arial Black";
-  background:-webkit-linear-gradient(top, #000000 0%, #a4c5f7 50%, #88ceff 51%, #000597 100%);
+  background-color: #3a3a3a;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+.navbar-light .navbar-nav .nav-link {
+  font-weight: bold;
+}
+
 .navbar-nav {
   flex-direction: initial!important;
   justify-content: center!important;
 }
 .nav-item {
   margin-right: 10px;
+}
+
+.headerBtn a {
+  margin-right: 25px;
+  background-color: #fd4e4e;
+  border-radius: 17px 0px !important;
+}
+
+.headerBtn a:hover {
+  opacity: 0.5;
 }
 
 /*topページ
@@ -203,6 +220,10 @@ main {
   color: #878787;
   width: 340px;
   height: 340px;
+}
+
+.top_registration_content a{
+  font-weight: bold;
 }
 
 /* 投稿してみよう */

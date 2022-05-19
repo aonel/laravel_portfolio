@@ -29,11 +29,11 @@
             
             <p class="navbar-nav text-center">こんにちは、{{ \Auth::user()->name }}さん</p>
             
-            <ul class="btn-group-vertical navbar-nav ml-auto mr-3" style="align-items: center">
-                <button class="btn btn-info btn-sm mr-3 "><a href="{{route('posts.create')}}" class="nav-link" style="color:white;">新規投稿</a></button>
+            <ul class="btn-group-vertical navbar-nav ml-auto mr-3 headerBtn" style="align-items: center;">
+                <a href="{{route('posts.create')}}" class="nav-link btn btn-secondary" style="color: white">新規投稿</a>
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
-                    <input type="submit" value="ログアウト" class="btn btn-secondary nav-link" style="color:white;">
+                    <input type="submit" value="ログアウト" class="btn btn-secondary nav-link" style="color: white">
                 </form>
             </ul>
         </div>
